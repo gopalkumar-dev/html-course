@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feedback</title>
+    </head>
+    <body>
+        <header class="header_area" id="top">
+            <h1>Feedback</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="connect.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main_area">
+            <section class="form_section">
+                <div>
+                    <h2>Share Your Thoughts</h2>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <div>
+                            <label for="f_name">Full Name:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="f_name"
+                                id="f_name"
+                                placeholder="Your Name"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <br />
+                            <input
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                pattern=".+@gmail.com"
+                            />
+                        </div>
+                        <div>
+                            <label for="website">Website:</label>
+                            <br />
+                            <input
+                                type="url"
+                                name="website"
+                                id="website"
+                                placeholder="https://your-site.com"
+                            />
+                        </div>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <br />
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                pattern="[0-9]+"
+                                placeholder="10-digit number"
+                            />
+                        </div>
+                        <div>
+                            <label for="age">Age:</label>
+                            <br />
+                            <input
+                                type="number"
+                                name="age"
+                                id="age"
+                                placeholder="Age"
+                                min="18"
+                                max="40"
+                            />
+                        </div>
+                        <div>
+                            <label for="date">Start Date:</label>
+                            <br />
+                            <input type="date" name="date" id="date" />
+                        </div>
+                        <div>
+                            <label for="event_time">Event Time:</label>
+                            <br />
+                            <input
+                                type="datetime-local"
+                                name="event_time"
+                                id="event_time"
+                            />
+                        </div>
+                        <div>
+                            <label for="week">Preferred Week:</label>
+                            <br />
+                            <input type="week" name="week" id="week" />
+                        </div>
+                        <div>
+                            <label for="color">Mood Color:</label>
+                            <br />
+                            <input type="color" name="color" id="color" />
+                        </div>
+                        <div>
+                            <label for="rate">Rating (0-10) :</label>
+                            <br />
+                            <input
+                                type="range"
+                                name="rate"
+                                id="rate"
+                                min="0"
+                                max="10"
+                            />
+                        </div>
+                        <div>
+                            <p>Tech Interest:</p>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="tech_interest"
+                                id="software"
+                                value="software"
+                            />
+                            <label for="software">Software</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="tech_interest"
+                                id="hardware"
+                                value="hardware"
+                            />
+
+                            <label for="hardware">Hardware</label>
+                        </div>
+                        <div>
+                            <p>Skills:</p>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                id="coding"
+                                value="coding"
+                            />
+                            <label for="coding">Coding</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                id="design"
+                                value="design"
+                            />
+                            <label for="design">Design</label>
+                        </div>
+                        <div>
+                            <label for="country">Country:</label>
+                            <br>
+                            <select name="country" id="country">
+                                <optgroup label="Asia">
+                                    <option value="India">India</option>
+                                    <option value="Bangladesh">
+                                        Bangladesh
+                                    </option>
+                                    <option value="Japan">Japan</option>
+                                </optgroup>
+
+                                <optgroup label="Europe">
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                    <option value="Italy">Italy</option>
+                                </optgroup>
+                                <optgroup label="America">
+                                    <option value="United States">
+                                        United States
+                                    </option>
+                                    <option value="Brazil">Brazil</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="feedback">Comments:</label>
+                            <br />
+                            <textarea
+                                name="feedback"
+                                id="feedback"
+                                cols="35"
+                                rows="5"
+                            >
+Sample feedback</textarea>
+                            >
+                        </div>
+
+                        <div>
+                            <label for="progress">Progress:</label>
+                            <br />
+                            <progress id="progress" max="100" value="80">
+                                80/100
+                            </progress>
+                        </div>
+
+                        <div>
+                            <label for="experience">Experience:</label>
+                            <br />
+                            <meter
+                                value="75"
+                                id="experience"
+                                min="0"
+                                max="100"
+                                high="70"
+                                low="30"
+                                optimum="80"
+                            ></meter>
+                        </div>
+                        <br />
+                        <div>
+                            <button type="submit" value="submit">
+                                <strong>Submit</strong>
+                            </button>
+                            &nbsp;&nbsp;
+                            <button type="reset" value="reset">
+                                <strong>Reset</strong>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <hr />
+            <section class="media_section">
+
+                <div class="image">
+                    <div><h2>Feedback Media</h2></div>
+                    <picture>
+                        <img
+                            src="https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g"
+                            alt="image"
+                            width="450"
+                        />
+                    </picture>
+                    <p>
+                        <sub>Feedback Visual</sub>
+                    </p>
+                </div>
+                <div class="video">
+                    <video controls autoplay muted width="450">
+                        <source src="../assets/videos/for_feedback/servey_video.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        <sub>Feedback Video</sub>
+                    </p>
+                </div>
+                <div class="audio">
+                    <audio controls autoplay>
+                        <source src="../assets/audios/for_feedback/feedback.mp3" type="audio/mpeg">
+                    </audio>
+                    <p><sub>Feedback Audio (Autoplay)</sub></p>
+                </div>
+                <div class="yt_feedback">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4rOw--cbaXM?si=FCio0MlDbKpSj9p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                    <p>
+                        <sub>YouTube Feedback</sub>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside_area">
+            <section class="feedback_details">
+                <div class="lists">
+                    <h2>Feedback Details</h2>
+                    <ul>
+                        <li>Questions</li>
+                        <li>Answers
+                            <ol>
+                                <li>Text</li>
+                                <li>Rating</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dt>Feedback</dt>
+                        <dd>User input</dd>
+                    </dl>
+                </div>
+
+                <div class="form_code">
+                    <h2>Form Code</h2>
+                    <pre>
+                        <code>
+                            &lt; input type="text" /&gt;           
+                        </code>
+                    </pre>
+                </div>
+
+            </section>
+        </aside>
+
+        <footer class="footer_area">
+            <div>
+                <p>
+                    Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to find. Variable: <var>input</var>. Output: <samp>Entered</samp>.
+                </p>
+                <p>
+                    &copy; 2025 | <a href="#top">Home</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
