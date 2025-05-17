@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+        </div>
+        <div>
+            <ul type="circle">
+                <li><a href="pages/about-us.html">About Us</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/contact-us.html">Contact Us</a></li>
+                <li><a href="pages/form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Introduction</h2>
+            <p>
+                This is a practice assignment covering all HTML topics taught so
+                far.
+            </p>
+        </div>
+        <div>
+            <h2>Code Example</h2>
+            <pre>
+                <code>
+                    function greet() {
+                        console.log("Hello,World!");
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h2>Keyboard Input</h2>
+            <p>To refresh the page, press <kbd>Ctrl</kbd>+<kbd>R</kbd></p>
+        </div>
+        <div>
+            <h2>Mathematical Variables</h2>
+            <p>
+                The area of a circle is calculated as <var>πr<sup>2</sup></var>
+            </p>
+        </div>
+        <div>
+            <h2>Sample Output</h2>
+            <p>Example system output:</p>
+            <samp>
+                <pre>File uploaded successfully.</pre>
+            </samp>
+        </div>
+        <div>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="assets/images/home-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="assets/images/home-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="assets/images/home-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="assets/images/home-2160.avif 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="assets/images/home-450.avif"
+                    alt="home-image"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <h2>Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <p>
+                        <label for="fname">Full Name:</label>
+                        <input
+                            type="text"
+                            name="fname"
+                            id="fname"
+                            required
+                            minlength="3"
+                            maxlength="10"
+                            placeholder="Your Full Name"
+                        />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your Email"
+                        />
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob" />
+                    </p>
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" name="color" id="color" />
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input
+                            type="number"
+                            name="phone"
+                            id="phone"
+                            pattern="[0-9]+"
+                            placeholder="Enter 10-digit phone number"
+                        />
+                    </p>
+                    <p>
+                        <label for="web">Personal Website:</label>
+                        <input
+                            type="url"
+                            name="web"
+                            id="web"
+                            placeholder="Enter your website URL"
+                        />
+                    </p>
+                    <p>
+                        <label for="comment">Your Comment:</label>
+                        <textarea
+                            name="comment"
+                            id="comment"
+                            cols="20"
+                            rows="4"
+                            placeholder="Write your comment here..."
+                        ></textarea>
+                    </p>
+                    <p>
+                        <label for="progress">Completion Progress:</label>
+                        <progress id="progress" max="100" value="50"></progress>
+                    </p>
+                    <p>
+                        <label for="satisfaction-lvl"
+                            >Satisfaction Meter:</label
+                        >
+                        <meter
+                            value="70"
+                            id="satisfaction-lvl"
+                            min="0"
+                            max="100"
+                            high="90"
+                            low="20"
+                            optimum="80"
+                        ></meter>
+                    </p>
+                </fieldset>
+                <br />
+                <button type="submit" id="submit" value="form-data">
+                    <strong>Submit</strong>
+                </button>
+                &nbsp;
+                <button type="reset"><strong>Reset</strong></button>
+            </form>
+        </div>
+    </body>
+</html>
