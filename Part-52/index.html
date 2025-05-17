@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        <!--header area start-->
+        <header class="header-area" id="top">
+            <div>
+                <h1>Welcome to My Website</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--header area end-->
+
+        <!--main area start-->
+        <main class="main-area">
+            <section class="intro_section">
+                <div>
+                    <h2>Introduction</h2>
+                    <p>
+                        This is the <mark>home page</mark> of the assignment. It
+                        uses <strong>all HTML topics</strong> taught so far.
+                        Here's a <br />
+                        line break and an horizontal rule below:
+                    </p>
+                </div>
+            </section>
+
+            <hr />
+
+            <section class="link_and_list_section">
+                <div class="quick_links">
+                    <h3>Quick Links</h3>
+                    <p>Jump to: <a href="#bottom-area">Bottom of Page</a></p>
+                    <p>
+                        External Links:
+                        <a href="https://www.google.com/" target="_blank"
+                            >Google</a
+                        >
+                        |
+                        <a href="https://www.flipkart.com/" target="_blank"
+                            >Flipcart</a
+                        >
+                    </p>
+                </div>
+
+                <div class="lists_demo">
+                    <h3>Lists Demo</h3>
+                    <ul>
+                        <li>Unordered Item 1</li>
+                        <li>
+                            Unordered Item 2
+                            <ol>
+                                <li>Nested Ordered Item 1</li>
+                                <li>Nested Ordered Item 2</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>HyperText Markup Language</dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Styling Sheets</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="media_section">
+                <h3>Image and Video Demo</h3>
+
+                <div class="image">
+                    <img
+                        src="https://picsum.photos/seed/picsum/200/300"
+                        alt="random_images"
+                    />
+                    <p>Image from Picsum</p>
+                </div>
+
+                <div class="video">
+                    <video controls preload="none" loop width="400">
+                        <source
+                            src="assets/videos/video_1.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <p>Sample Video</p>
+                </div>
+
+            </section>
+            <section class="text-formating" id="bottom-area">
+                <div>
+                    <h3>Text Formating</h3>
+                    <p>
+                        This is <strong>bold</strong>, <em>italic</em>,
+                        <strong>important</strong>, and
+                        <em>emphasized</em> text.
+                        <br />
+                        <del>Old text </del> replaced with <ins>new text</ins>.
+                        H<sub>2</sub>O and x<sup>2</sup>. <br />
+                        <sub>Small text here.</sub>
+                    </p>
+                </div>
+                <div>
+                    <h3>Code Example</h3>
+                    <br /><br />
+                    <samp>This is a paragraph</samp>
+                </div>
+                <br /><br />
+                <div>
+                    <p>
+                        Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save. Variable :
+                        <var>x.</var> Output: <samp>Hello.</samp>
+                    </p>
+                </div>
+                <div>
+                    <h3>Table Demo</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th colspan="2">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Age: 25</td>
+                                <td>City: NY</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">End of Table</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <!--main area end-->
+
+        <!--aside and footer area start-->
+        <aside class="aside-area" id="aside-area">
+            <div>
+                <h3>Aside Content</h3>
+            </div>
+            <section>
+                <p>This is a <q>short quote</q> in an aside.</p>
+            </section>
+        </aside>
+        <footer class="footer-area" id="footer-area">
+            <p>&copy; 2025 My Website | <a href="#top">Back to Top</a></p>
+        </footer>
+        <!--aside and footer area end-->
+    </body>
+</html>
