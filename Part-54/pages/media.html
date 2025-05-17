@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Gallery</title>
+    </head>
+    <body>
+        <!--Header start-->
+        <header class="header_area" id="top">
+            <div>
+                <h1>Media Gallery</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Servey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Header end-->
+
+        <!--Main area start-->
+        <main class="main_area">
+            <section class="media_section">
+                <div>
+                    <h2>Explore Media</h2>
+                </div>
+                <div>
+                    <p>
+                        Enjoy our <mark>curated</mark> collection
+                        <strong>learning media</strong>.
+                    </p>
+                </div>
+                <div class="responsive_image">
+                    <picture>
+                        <source
+                            srcset="
+                                ../assets/images/for_media/media-450.avif 1x,
+                                ../assets/images/for_media/media-450.jpg  1.5x,
+                                ../assets/images/for_media/media-450.webp 2x
+                            "
+                            media="(max-width: 500px)"
+                        />
+
+                        <source
+                            srcset="
+                                ../assets/images/for_media/media-1280.avif 1x,
+                                ../assets/images/for_media/media-1280.jpg  1.5x,
+                                ../assets/images/for_media/media-1280.webp 2x
+                            "
+                            media="(max-width: 1500px)"
+                        />
+
+                        <source
+                            srcset="
+                                ../assets/images/for_media/media-1920.avif 1x,
+                                ../assets/images/for_media/media-1920.jpg  1.5x,
+                                ../assets/images/for_media/media-1920.webp 2x
+                            "
+                            media="(max-width: 2000px)"
+                        />
+
+                        <source
+                            srcset="
+                                ../assets/images/for_media/media-2160.avif 1x,
+                                ../assets/images/for_media/media-2160.jpg  1.5x,
+                                ../assets/images/for_media/media-2160.webp 2x
+                            "
+                            media="(min-width: 2160px)"
+                        />
+
+                        <img
+                            src="../assets/images/for_media/media-450.avif"
+                            alt="media_images"
+                        />
+                        <p><sub>Responsive Image</sub></p>
+                    </picture>
+                </div>
+
+                <div class="learning_video">
+                    <video controls autoplay muted width="500" loop>
+                        <source
+                            src="../assets/videos/for_media/media.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <p><sub>Learning Video</sub></p>
+                </div>
+                <div class="background_audio">
+                    <audio controls loop>
+                        <source
+                            src="../assets/audios/for_media/media_audio.mp3"
+                            type="audio/mpeg"
+                        />
+                    </audio>
+                    <p>
+                        <sub>Background Audio (Looping)</sub>
+                    </p>
+                </div>
+                <hr />
+
+                <div class="image_map">
+                    <h3>Image Map</h3>
+                    <picture>
+                        <img
+                            src="../assets/images/for_media/img_map.jpg"
+                            usemap="#image-map"
+                        />
+                        <map name="image-map">
+                            <area
+                                target="_blank"
+                                alt="Riverside"
+                                title="Riverside"
+                                href="https://en.wikipedia.org/wiki/Riverside"
+                                coords="5,596,3,705,138,706,213,707,257,704,324,706,638,701,635,619,427,613,310,662,222,609,187,611,100,604"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="Boat"
+                                title="Boat"
+                                href="https://en.wikipedia.org/wiki/Boat"
+                                coords="254,539,235,569,258,620,365,636,426,571,376,522,358,516,342,511,313,518,296,524,284,527,269,531"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="Mountain"
+                                title="Mountain"
+                                href="https://en.wikipedia.org/wiki/Mountain"
+                                coords="0,158,0,232,639,227,635,191,333,180"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="Sky"
+                                title="Sky"
+                                href="https://en.wikipedia.org/wiki/Sky"
+                                coords="2,3,2,155,639,186,632,1,406,1,79,1"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="River"
+                                title="River"
+                                href="https://en.wikipedia.org/wiki/River"
+                                coords="2,239,637,232,639,600,342,493,1,585,2,506,2,408,0,380,1,321"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="River"
+                                title="River"
+                                href="https://en.wikipedia.org/wiki/River"
+                                coords="2,590,241,527,222,601"
+                                shape="poly"
+                            />
+                            <area
+                                target="_blank"
+                                alt="River"
+                                title="River"
+                                href="https://en.wikipedia.org/wiki/River"
+                                coords="632,609,475,604,368,507,480,547"
+                                shape="poly"
+                            />
+                        </map>
+                    </picture>
+                </div>
+
+                <div>
+                    <h3>Media List</h3>
+                    <ol>
+                        <li>
+                            <a
+                                href="https://www.pexels.com/photo/motorcycles-parked-by-scenic-ocean-view-31108572/"
+                                target="_blank"
+                                >Image Sample</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://videos.pexels.com/video-files/31096569/13287158_1440_2560_25fps.mp4"
+                                >Video Sample</a
+                            >
+                        </li>
+                    </ol>
+
+                    <dl>
+                        <dt>Media Stats</dt>
+                        <dd>Visual and audio content</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h4>Media Code</h4>
+                    <pre>
+                        <code>
+                            &lt;audio controls&gt; &lt;source src="audio.mp3"&gt;&lt;/audio&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <p>Use <kbd>Space</kbd> to play. Variable: <em>sound</em>. Output: <samp>Playing</samp></p>
+                </div>
+                <div>
+                    <H4>Media Stats</H4>
+
+                </div>
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Images</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Videos</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total: 8</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <!--Main area end-->
+
+        <!--Footer area start-->
+        <footer class="">
+            <div>
+                <p>
+                    <q>Media inspires learning.</q>
+                </p>
+                <p>
+                    &copy; 2025 | <a href="#top">Home</a>
+                </p>
+            </div>
+        </footer>
+        <!--Footer area end-->
+    </body>
+</html>
