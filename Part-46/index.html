@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div>
+            <h1 style="color: white; background-color: brown">
+                Welcome to Our Website
+            </h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="pages/about-us.html">About Us</a></li>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/contact-us.html">Contact Us</a></li>
+                <li><a href="pages/form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Introduction</h2>
+            <p>
+                This is a practice assignment covering all
+                <strong>HTML</strong> topics taught so far.
+            </p>
+        </div>
+        <div>
+            <h2>Responsive Image</h2>
+            <picture>
+                <source
+                    srcset="assets/images/home-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="assets/images/home-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="assets/images/home-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="assets/images/home-2160.avif 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img src="assets/images/home-450.avif" alt="img" width="100%" />
+            </picture>
+        </div>
+        <div>
+            <h2>Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <p>
+                        <label for="fname">Full Name :</label>
+                        <input
+                            type="text"
+                            name="fname"
+                            id="fname"
+                            placeholder="Enter your name"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label for="email">E-mail :</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            pattern=".+@gmail.com"
+                            placeholder="Only G-mail"
+                        />
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth :</label>
+                        <input type="date" name="dob" id="dob" required/>
+                    </p>
+                    <p>
+                        <label for="cmnt">Your Comments :</label>
+                        <textarea
+                            name="comment"
+                            id="cmnt"
+                            placeholder="Write your comments..."
+                            rows="4"
+                            cols="20"
+                        ></textarea>
+                    </p>
+                    <p>
+                        <label for="progress">Completion Progress :</label>
+                        <progress max="100" value="60">60/100</progress>
+                    </p>
+                </fieldset>
+                <br />
+                <button type="submit" id="submit" value="form-data">
+                    <strong>Submit</strong>
+                </button>
+                &nbsp;
+                <button type="reset" id="reset"><strong>Reset</strong></button>
+            </form>
+        </div>
+    </body>
+</html>
