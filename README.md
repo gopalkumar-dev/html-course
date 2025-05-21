@@ -1,2 +1,2 @@
-# html-course
-This repository contains all project files of HTML course.
+# php-laravel-course
+This repository contains all PHP Laravel Course content and assignments.
