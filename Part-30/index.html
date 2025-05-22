@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 30</title>
+    </head>
+    <body>
+        <div>
+            <h1>Responsive Image</h1>
+            <picture>
+                <source
+                    srcset="
+                        assets/images/car-image-450.avif 1x,
+                        assets/images/car-image-450.jpg  1.5x,
+                        assets/images/car-image-450.webp 2x
+                    "
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="
+                        assets/images/car-image-768.avif 1x,
+                        assets/images/car-image-768.jpg  1.5x,
+                        assets/images/car-image-768.webp 2x
+                    "
+                    media="(max-width: 900px)"
+                />
+                <source
+                    srcset="
+                        assets/images/car-image-1280.avif 1x,
+                        assets/images/car-image-1280.jpg  1.5x,
+                        assets/images/car-image-1280.webp 2x
+                    "
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="
+                        assets/images/car-image-1920.avif 1x,
+                        assets/images/car-image-1920.jpg  1.5x,
+                        assets/images/car-image-1920.webp 2x
+                    "
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="
+                        assets/images/car-image-2160.avif 1x,
+                        assets/images/car-image-2160.jpg  1.5x,
+                        assets/images/car-image-2160.webp 2x
+                    "
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="assets/images/car-image-1920.avif"
+                    alt="car-image"
+                    width="100%"
+                />
+            </picture>
+        </div>
+    </body>
+</html>
