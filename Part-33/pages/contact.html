@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+    </head>
+    <body>
+        <h2>Contact John Doe</h2>
+        <h3>Responsive Contact Banner</h3>
+
+        <picture>
+            <source
+                srcset="
+                    ../assets/images/web-cover-450.avif 1x,
+                    ../assets/images/web-cover-450.jpg  1.5x,
+                    ../assets/images/web-cover-450.webp
+                "
+                media="(max-width: 500px)"
+            />
+
+            <source
+                srcset="
+                    ../assets/images/res-gallery-768.avif 1x,
+                    ../assets/images/res-gallery-768.jpg  1.5x,
+                    ../assets/images/res-gallery-768.webp
+                "
+                media="(max-width: 850px)"
+            />
+
+            <source
+                srcset="
+                    ../assets/images/web-banner-1280.avif 1x,
+                    ../assets/images/web-banner-1280.jpg  1.5x,
+                    ../assets/images/web-banner-1280.webp
+                "
+                media="(max-width: 1500px)"
+            />
+
+            <source
+                srcset="
+                    ../assets/images/web-cover-1920.avif 1x,
+                    ../assets/images/web-cover-1920.jpg  1.5x,
+                    ../assets/images/web-cover-1920.webp
+                "
+                media="(max-width: 2000px)"
+            />
+
+            <source
+                srcset="
+                    ../assets/images/web-cover-2160.avif 1x,
+                    ../assets/images/web-cover-2160.jpg  1.5x,
+                    ../assets/images/web-cover-2160.webp
+                "
+                media="(min-width: 2160px)"
+            />
+
+            <img
+                src="../assets/images/web-cover-1920.avif"
+                alt="web-cover"
+                width="1000"
+            />
+        </picture>
+        <h4>Contact Info.</h4>
+        <ul>
+            <li>E-mail: john.doe@example.com</li>
+            <li>Phone: +123456789</li>
+        </ul>
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <h1>Gallery</h1>
+        <p>Here are some of the projects John has worked on:</p>
+        <figure>
+            <picture>
+                <source srcset="../assets/images/e-commerce-website-768.avif 1x,../assets/images/e-commerce-website-768.jpg 1x,../assets/images/e-commerce-website-768.webp 2x " media="(max-width: 1500px)" >
+
+                <source srcset="../assets/images/e-commerce-website-2160.avif 1x,../assets/images/e-commerce-website-2160.jpg 1x,../assets/images/e-commerce-website-2160.webp 2x " media="(min-width: 2160px)" >
+
+                <img
+                src="../assets/images/e-com-1.avif"
+                alt="e commerce website"
+                width="400"
+            />
+            <figcaption>Project 1: E-commerce Website</figcaption>
+            </picture>
+            
+            <picture>
+                <source srcset="../assets/images/e-com-1.avif 1x,../assets/images/e-com-1.avif 1.5x,../assets/images/e-com-1.avif 2x," media="(max-width: 1500px)" >
+                <img
+                src="../assets/images/corporate-web.avif"
+                alt="corporate website"
+                width="450"
+            />
+            <figcaption>Project 2: Corporate Website</figcaption>
+            </picture>
+
+        </figure>
+        <h2>Responsive Image Example</h2>
+
+        <picture>
+            <source
+                srcset="../assets/images/res-gallery-450.avif 1x"
+                media="(max-width: 500px)"
+            />
+            <source
+                srcset="../assets/images/web-banner-1280.avif 1.5x"
+                media="(max-width: 1500px)"
+            />
+            <source
+                srcset="../assets/images/res-gallery-1920.avif 2x"
+                media="(max-width: 2000px)"
+            />
+            <source
+                srcset="../assets/images/res-gallery-2160.avif 2.5x"
+                media="(min-width: 2160px)"
+            />
+
+            <img
+                src="../assets/images/res-gallery-1920.avif"
+                alt="Responsive Image Example"
+                width="600"
+            />
+        </picture>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about-us.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </body>
+</html>
