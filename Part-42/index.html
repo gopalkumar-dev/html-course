@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 42</title>
+    </head>
+    <body>
+        <h1>Class Assignment of- (40 - 45)</h1>
+        <form action="">
+            <fieldset>
+                <legend>Personal Detail</legend>
+                <p>
+                    <label for="fname">Full Name:</label>
+                    <input
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        minlength="3"
+                        maxlength="8"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" id="e-mail" name="e-mail" pattern=".+@yahoo.com" placeholder="For Yahoo Users Only">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" pattern=".+@gmail.com" placeholder="For G-mail Users Only">
+                </p>
+                <p>
+                    <label for="age">Your Age:</label>
+                    <input type="number" name="age" id="age" min="15" max="35" placeholder="Between 15-45" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" required pattern="[0-9]+">
+                </p>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Date, Time, Month & Week</legend>
+                <p>
+                    <label for="date-time">Date-time :</label>
+                    <input
+                        type="datetime-local"
+                        name="date-time"
+                        id="date-time"
+                    />
+                </p>
+                <p>
+                    <label for="date">Date :</label>
+                    <input type="date" name="date" id="date" />
+                </p>
+                <p>
+                    <label for="time">Time :</label>
+                    <input type="time" name="time" id="time" />
+                </p>
+                <p>
+                    <label for="month">Month :</label>
+                    <input type="month" name="month" id="month" />
+                </p>
+                <p>
+                    <label for="week">Week :</label>
+                    <input type="week" name="week" id="week" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Type Your Message Here</legend>
+                <p>
+                    <label for="msg">Message :</label>
+                    <textarea
+                        name="message"
+                        id="msg"
+                        cols="15"
+                        rows="4"
+                    ></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Desired Courses</legend>
+                <p>
+                    <label for="selected-course">Select Course: </label>
+                    <select
+                        name="selected-course"
+                        id="selected-course"
+                        multiple
+                    >
+                        <optgroup label="Frontend">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JS</option>
+                        </optgroup>
+                        <optgroup label="Backend">
+                            <option value="php">PHP</option>
+                            <option value="laravel">Laravel</option>
+                            <option value="my-sql">MySQL</option>
+                            <option value="mongo-db">MongoDB</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Purchase Your Desired Courses</legend>
+                <p>
+                    <label for="l1">Purchase Courses: </label>
+                    <input
+                        type="text"
+                        name="purchased-courses"
+                        id="l1"
+                        list="purchased-courses"
+                    />
+                    <datalist id="purchased-courses">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Laravel">Laravel</option>
+                        <option value="MySQL">MySQL</option>
+                        <option value="MongoDB">MongoDB</option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Region</legend>
+                <p>
+                    <label for="your-region">Your Region :</label>
+                    <select name="your-region" id="your-region">
+                        <optgroup label="Asia">
+                            <option value="india">India</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="japan">Japan</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="italy">Italy</option>
+                        </optgroup>
+                        <optgroup label="America">
+                            <option value="brazil">Brazil</option>
+                            <option value="us">United States</option>
+                            <option value="uruguay">Uruguay</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Your Progress</legend>
+                <p>
+                    <label for="progress">Your Progress:</label>
+                    <progress id="progress" max="100" value="45">
+                        35/100
+                    </progress>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Disk Usage</legend>
+                <p>
+                    <label for="c-d">Local Disc (C:)</label>
+                    <meter
+                        value="35"
+                        id="c-d"
+                        min="0"
+                        max="120"
+                        high="90"
+                        low="40"
+                        optimum="100"
+                    ></meter>
+                </p>
+                <p>
+                    <label for="d-d">Local Disc (D:)</label>
+                    <meter
+                        value="95"
+                        id="d-d"
+                        min="0"
+                        max="180"
+                        high="100"
+                        low="45"
+                        optimum="120"
+                    ></meter>
+                </p>
+                <p>
+                    <label for="e-d">Local Disc (E:)</label>
+                    <meter
+                        value="260"
+                        id="e-d"
+                        min="0"
+                        max="300"
+                        high="220"
+                        low="50"
+                        optimum="230"
+                    ></meter>
+                </p>
+            </fieldset>
+            <br />
+            <button type="submit" name="submit" id="submit" value="form-data">
+                <strong>Submit</strong>
+            </button>
+            &nbsp;
+            <button type="reset" name="reset" id="reset">
+                <strong>Reset</strong>
+            </button>
+        </form>
+    </body>
+</html>
