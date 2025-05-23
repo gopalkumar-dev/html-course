@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+
+            <div>
+                <ul>
+                    <li><a href="pages/about-us.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact-us.html">Contact</a></li>
+                    <li><a href="pages/form.html">Form</a></li>
+                </ul>
+                <h2>HTML Learning Path</h2>
+                <p>
+                    This site provides step-by-step tutorials on HTML. Learn to
+                    use
+                    <strong>tags</strong
+                    >,<em>attributes</em>,<strong>formating</strong>, and more.
+                    Key topics include
+                    <span style="background-color: yellow">HTML basics</span>,
+                    <u>styling</u>, and <del>depreeated elements</del>.
+                </p>
+            </div>
+
+            <div>
+                <h3>Responsive Image Example</h3>
+                <picture>
+                    <source
+                        srcset="assets/images/gal-450.avif 1x"
+                        media="(max-width: 450px)" />
+                    <source
+                        srcset="assets/images/car-image-1280.avif 1.5x"
+                        media="(max-width: 1500px)" />
+                    <source
+                        srcset="assets/images/mahal-1920.avif 2x"
+                        media="(max-width: 2000px)" />
+                    <source
+                        srcset="assets/images/home-2160.avif 2.5x"
+                        media="(min-width: 2160px)" />
+                    <img
+                        src="assets/images/mahal-1920.avif"
+                        alt="mahal"
+                        width="100%"
+                /></picture>
+            </div>
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Assignment Form</legend>
+                        <p>
+                            <label for="fullname">Full Name : </label>
+                            <input
+                                type="text"
+                                name="fullname"
+                                id="fullname"
+                                placeholder="Enter your full name"
+                            />
+                        </p>
+                        <p>
+                            <label for="e-mail">E-mail Address : </label>
+                            <input
+                                type="email"
+                                name="e-mail"
+                                id="e-mail"
+                                placeholder="Enter your e-mail"
+                            />
+                        </p>
+                        <p>
+                            <label for="url">Your Website :</label>
+                            <input
+                                type="url"
+                                name="url"
+                                id="url"
+                                placeholder="Enter your url"
+                            />
+                        </p>
+                        <p>Gender :</p>
+                        <p>
+                            <input
+                                type="radio"
+                                name="gender"
+                                id="male"
+                                value="male"
+                            />
+                            <label for="male">Male</label>
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                name="gender"
+                                id="female"
+                                value="female"
+                            />
+                            <label for="female">Female</label>
+                        </p>
+                        <p>Select Your Interests</p>
+                        <p>
+                            <input
+                                type="checkbox"
+                                name="select-your-interests"
+                                id="html"
+                                value="html"
+                            />
+                            <label for="html">HTML</label>
+                        </p>
+                        <p>
+                            <input
+                                type="checkbox"
+                                name="select-your-interests"
+                                id="css"
+                                value="css"
+                            />
+                            <label for="css">CSS</label>
+                        </p>
+                        <p>
+                            <label for="your-message">Your Message:</label>
+                            <input
+                                type="search"
+                                name="your-message"
+                                id="your-message"
+                                placeholder="Enter or search your mission"
+                            />
+                        </p>
+                    </fieldset>
+                    <br />
+                    <button type="submit" name="submit" id="submit">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset" name="reset" id="reset">
+                        <strong>Reset</strong>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

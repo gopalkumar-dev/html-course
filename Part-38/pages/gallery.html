@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Gallery Images</h2>
+            <picture>
+                <source
+                    srcset="../assets/images/house-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/home-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/mahal-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="../assets/images/home-2160.avif 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/house-450.avif"
+                    alt="house"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                    srcset="../assets/images/res-gallery-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/car-image-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/mahal-2160.avif 2x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/car-image-1920.avif"
+                    alt="car"
+                    width="100%"
+                />
+            </picture>
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Assignment Form</legend>
+                        <p>
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" />
+                        </p>
+                        <p>
+                            <label for="e-mail">E-mail Address:</label>
+                            <input type="email" name="e-mail" id="e-mail" placeholder="Enter your e-mail" />
+                        </p>
+                        <p>
+                            <label for="link">Favorite Image ID:</label>
+                            <input type="url" name="link" id="link" placeholder="Enter your image ID or URL" />
+                        </p>
+                        <p>
+                            Image Type: 
+                        </p>
+                        <p>
+                            <input type="radio" name="image-type" id="landscape"  value="landscape">
+                            <label for="landscape">Landscape</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="image-type" id="portrait"  value="portrait">
+                            <label for="portrait">Portrait</label>
+                        </p>
+                        <p>Choose Tags:</p>
+                        <p>
+                            <input type="checkbox" name="choose-tags" id="nature" value="nature" >
+                            <label for="nature">Nature</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="choose-tags" id="urban" value="urban" >
+                            <label for="urban">Urban</label>
+                        </p>
+                        <p>
+                            <label for="search-img">Search for Images: </label>
+                            <input type="search" name="search-images" id="search-img" placeholder="Search images" >
+                        </p>
+                    </fieldset>
+                    <br />
+                    <button type="submit" id="submit" value="form data">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset" id="reset">
+                        <strong>Reset</strong>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

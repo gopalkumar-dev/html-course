@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Our Mission</h2>
+            <p>
+                We aim to provide <strong>quality education</strong> in
+                <em>web development</em>. Our tutorials are
+                <span style="background-color: yellow">easy to follow</span> and
+                <strong>structured for learning</strong>.
+            </p>
+        </div>
+        <div>
+            <h3>I m a g e s</h3>
+            <picture>
+                <source
+                    srcset="../assets/images/house-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/home-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/mahal-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="../assets/images/home-2160.avif 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/house-450.avif"
+                    alt="house"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Assignment Form</legend>
+                    <p>
+                        <label for="full-name">Full Name: </label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" />
+                    </p>
+                    <p>
+                        <label for="e-mail">E-mail: </label>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Enter your e-mail" />
+                    </p>
+                    <p>Preferred Learning Style:</p>
+                    <p>
+                        <input
+                            type="radio"
+                            id="visual"
+                            name="preferred-learning-style"
+                            value="visual"
+                        />
+                        <label for="visual">Visual</label>
+                    </p>
+                    <p>
+                        <input
+                            type="radio"
+                            id="handson"
+                            name="preferred-learning-style"
+                            value="handson"
+                        />
+                        <label for="handson">Hands-On</label>
+                    </p>
+                    <p>Topics of Interest:</p>
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="javascript"
+                            name="topics-of-interest"
+                            value="javascript"
+                        />
+                        <label for="javascript">JavaScript</label>
+                    </p>
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="php"
+                            name="topics-of-interest"
+                            value="php"
+                        />
+                        <label for="php">PHP</label>
+                    </p>
+                    <p>
+                        <label for="msg">Comments: </label>
+                        <textarea name="msg" id="msg" placeholder="Your comments or feedback" ></textarea>
+                    </p>
+                </fieldset>
+                <br />
+                <button type="submit" id="submit" value="form data">
+                    <strong>Submit</strong>
+                </button>
+                <button type="reset" id="reset" value="form data">
+                    <strong>Reset</strong>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
