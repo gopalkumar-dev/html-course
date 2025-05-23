@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <header class="header-part">
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <nav>
+                <ul type="circle">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-area">
+            <section class="blog-section">
+                <div>
+                    <h2>Our Story</h2>
+                    <blockquote>
+                        "We started our journey with the goal of making web
+                        development accessible to everyone."
+                    </blockquote>
+                </div>
+                <div>
+                    <h2>Code Snippet</h2>
+                    <pre>
+             <code>
+                console.log("Welcome to Web Development");
+             </code>
+            </pre>
+                </div>
+            </section>
+            <section class="image-section">
+                <div>
+                    <h2>Team Photo</h2>
+                    <picture>
+                        <source
+                            srcset="../assets/images/home-450.avif 1x"
+                            media="(max-width: 500px)"
+                        />
+                        <source
+                            srcset="../assets/images/home-1280.avif 1.5x"
+                            media="(max-width: 1500px)"
+                        />
+                        <source
+                            srcset="../assets/images/home-1920.avif 2x"
+                            media="(max-width: 2000px)"
+                        />
+                        <source
+                            srcset="../assets/images/home-2160.avif 2.5x"
+                            media="(min-width: 2160px)"
+                        />
+                        <img
+                            src="../assets/images/home-450.avif"
+                            alt="home-image"
+                            width="100%"
+                        />
+                    </picture>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

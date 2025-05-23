@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <header class="header-sec">
+            <div>
+                <h1>Submit Your Details</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-area">
+            <div>
+                <h2>Fill out the form</h2>
+            </div>
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Personal Info.</legend>
+                        <p>
+                            <label for="fname">Full Name:</label>
+                            <input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                required
+                                minlength="3"
+                                maxlength="10"
+                                placeholder="Your Full Name"
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Your Email"
+                            />
+                        </p>
+                        <p>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" name="dob" id="dob" />
+                        </p>
+                        <p>
+                            <label for="color">Favorite Color:</label>
+                            <input type="color" name="color" id="color" />
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input
+                                type="number"
+                                name="phone"
+                                id="phone"
+                                pattern="[0-9]+"
+                                placeholder="Enter 10-digit phone number"
+                            />
+                        </p>
+                        <p>
+                            <label for="web">Personal Website:</label>
+                            <input
+                                type="url"
+                                name="web"
+                                id="web"
+                                placeholder="Enter your website URL"
+                            />
+                        </p>
+                        <p>
+                            <label for="date&time">Meeting Date & Time:</label>
+                            <input
+                                type="datetime-local"
+                                name="date&time"
+                                id="date&time"
+                            />
+                        </p>
+                        <p>
+                            <label for="week">Preferred Language:</label>
+                            <input
+                                type=""
+                                name="preferred-language"
+                                id="preferred-language"
+                                list="lang"
+                            />
+                            <datalist id="lang">
+                                <option value="Bangla">Bangla</option>
+                                <option value="English">English</option>
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="gender">Gender:</label>
+                            <select name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="comment">Your Comment:</label>
+                            <textarea
+                                name="comment"
+                                id="comment"
+                                cols="20"
+                                rows="4"
+                                placeholder="Write your comment here..."
+                            ></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Experience</legend>
+                        <p>
+                            <label for="exp-years">Years of Experience:</label>
+                            <input
+                                type="number"
+                                name="exp-years"
+                                id="exp-years"
+                                min="2"
+                                max="5"
+                            />
+                        </p>
+
+                        <p>
+                            <label for="progress">Completion Progress:</label>
+                            <progress
+                                id="progress"
+                                max="100"
+                                value="50"
+                            ></progress>
+                        </p>
+                        <p>
+                            <label for="satisfaction-lvl"
+                                >Satisfaction Meter:</label
+                            >
+                            <meter
+                                value="70"
+                                id="satisfaction-lvl"
+                                min="0"
+                                max="100"
+                                high="90"
+                                low="20"
+                                optimum="80"
+                            ></meter>
+                        </p>
+                    </fieldset>
+                    <br />
+                    <button type="submit" id="submit" value="form-data">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset"><strong>Reset</strong></button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

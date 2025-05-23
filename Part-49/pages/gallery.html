@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <header class="head-section">
+            <div>
+                <h1>Gallery</h1>
+            </div>
+            <nav>
+                <ul type="circle">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-section">
+            <section class="image-section">
+                <div>
+                    <h2>Image Showcase</h2>
+                    <picture>
+                        <source
+                            srcset="../assets/images/gal-450.avif 1x"
+                            media="(max-width: 500px)"
+                        />
+                        <source
+                            srcset="../assets/images/gal-1280.avif 1.5x"
+                            media="(max-width: 1500px)"
+                        />
+                        <source
+                            srcset="../assets/images/gal-1920.avif 2x"
+                            media="(max-width: 2000px)"
+                        />
+                        <source
+                            srcset="../assets/images/gal-2160.avif 2.5x"
+                            media="(min-width: 2160px)"
+                        />
+                        <img
+                            src="../assets/images/gal-450.avif"
+                            alt="gallery-images"
+                            width="100%"
+                        />
+                    </picture>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
