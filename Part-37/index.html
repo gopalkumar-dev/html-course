@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+
+            <div>
+                <ul>
+                    <li><a href="pages/about-us.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact-us.html">Contact</a></li>
+                    <li><a href="pages/form.html">Form</a></li>
+                </ul>
+                <h2>HTML Learning Path</h2>
+                <p>
+                    This site provides step-by-step tutorials on HTML. Learn to
+                    use
+                    <strong>tags</strong
+                    >,<em>attributes</em>,<strong>formating</strong>, and more.
+                    Key topics include
+                    <span style="background-color: yellow">HTML basics</span>,
+                    <u>styling</u>, and <del>depreeated elements</del>.
+                </p>
+            </div>
+
+            <div>
+                <h3>Responsive Image Example</h3>
+                <picture>
+                    <source
+                        srcset="assets/images/home-450.avif 1x"
+                        media="(max-width: 450px)" />
+                    <source
+                        srcset="assets/images/car-image-1280.avif 1.5x"
+                        media="(max-width: 1500px)" />
+                    <source
+                        srcset="assets/images/mahal-1920.avif 2x"
+                        media="(max-width: 2000px)" />
+                    <source
+                        srcset="assets/images/home-2160.avif 2.5x"
+                        media="(min-width: 2160px)" />
+                    <img
+                        src="assets/images/mahal-1920.avif"
+                        alt="mahal"
+                        width="100%"
+                /></picture>
+            </div>
+
+            <div>
+                <form action="">
+                    <p><label for="u-name">Username:</label></p>
+                    <p>
+                        <input
+                            type="text"
+                            name="user-name"
+                            id="u-name"
+                            placeholder="Enter your user name"
+                        />
+                    </p>
+
+                    <p><label for="pass">Password: </label></p>
+                    <p>
+                        <input
+                            type="password"
+                            name="password"
+                            id="pass"
+                            placeholder="Enter your password"
+                        />
+                    </p>
+
+                    <p>Choose your learning style:</p>
+                    <p>
+                        <input
+                            type="checkbox"
+                            name="learning-style"
+                            id="html-basics"
+                            value="html-basics"
+                        />
+                        <label for="html-basics">HTML Basics</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            name="learning-style"
+                            id="txt-form"
+                            value="text-formating"
+                        />
+                        <label for="txt-form">Text Formating</label>
+                    </p>
+
+                    <p>Preferred Learning Style:</p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            name="preferred-learning-style"
+                            id="visual"
+                            value="visual"
+                        />
+                        <label for="visual">Visual</label>
+                    </p>
+                    <p>
+                        <input
+                            type="radio"
+                            name="preferred-learning-style"
+                            id="txt"
+                            value="textual"
+                        />
+
+                        <label for="txt">Textual</label>
+                    </p>
+                    <br>
+                    <button type="submit" name="submit" value="submit data">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset" name="reset" >
+                        <strong>Reset</strong>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
