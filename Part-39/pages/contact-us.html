@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact Us</h1>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+            <h2>Get in Touch</h2>
+            <p>
+                If you have any questions, feel free to contact us through this
+                form.
+            </p>
+        </div>
+        <div>
+            <h2>Responsive Image</h2>
+
+            <picture>
+                <source
+                    srcset="../assets/images/toy-house-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/all-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/contact-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="../assets/images/landscape1-2160.jpg 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/toy-house-450.avif"
+                    alt="house"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                    srcset="../assets/images/res-gallery-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/car-image-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/mahal-2160.avif 2x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/car-image-1920.avif"
+                    alt="car"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        />
+                    </p>
+                    <p>
+                        <label for="phn">Phone:</label>
+                        <input
+                            type="tel"
+                            name="phn"
+                            id="phn"
+                            placeholder="Enter your phone number"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred Contact Date</legend>
+                    <p>
+                        <label for="date&time">Select Date & Time:</label>
+                        <input
+                            type="datetime-local"
+                            name="date&time"
+                            id="date&time"
+                        />
+                    </p>
+                    <p>
+                        <label for="date">Select Date:</label>
+                        <input type="date" name="date" id="date" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <p>
+                        <label for="rating">Rating:</label>
+                        <input
+                            type="range"
+                            name="rating"
+                            id="rating"
+                            min="1000"
+                            max="5000"
+                            step="500"
+                        />
+                    </p>
+                    <p>
+                        <label for="color">Color Preference:</label>
+                        <input type="color" name="color" id="color" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Subscribe</legend>
+                    <p>
+                       
+                        <input
+                            type="checkbox"
+                            name="subscribe"
+                            id="subscribe"
+                            value="subscribe-to-newsletter"
+                        />
+                         <label for="subscribe">Subscribe to Newsletter</label>
+                    </p>
+                </fieldset>
+                <br />
+                <button type="submit" name="submit" value="form-data">
+                    <strong>Submit</strong>
+                </button>
+                &nbsp;
+                <button type="reset" name="reset">
+                    <strong>Reset</strong>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

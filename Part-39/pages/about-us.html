@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <div>
+            <h1>About Us</h1>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Our Mission</h2>
+            <p>
+                We aim to provide <strong>quality education</strong> in
+                <em>web development</em>. Our tutorials are
+                <span style="background-color: yellow">easy to follow</span> and
+                <strong>structured for learning</strong>.
+            </p>
+        </div>
+        <div>
+            <h3>I m a g e s</h3>
+            <picture>
+                <source
+                    srcset="../assets/images/gallery-450.jpg 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/taj-mahal.jpg 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/riverside-house-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="../assets/images/home-2160.avif 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/house-450.avif"
+                    alt="house"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>User Details</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="fullname" id="fullname" />
+                    </p>
+                    <p>
+                        <label for="email">E-mail Address:</label>
+                        <input type="email" name="email" id="email" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Prefferences</legend>
+                    <p>
+                        <label for="color">Choose a color:</label>
+                        <input type="color" name="color" id="color" />
+                    </p>
+                    <p>
+                        <label for="range">Price Range:</label>
+                        <input
+                            type="range"
+                            name="range"
+                            id="range"
+                            value="price-range"
+                            min="1000"
+                            max="10000"
+                            step="1000"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Date and Time</legend>
+                    <p>
+                        <label for="date&time">Select Date-time:</label>
+                        <input
+                            type="datetime-local"
+                            name="date&time"
+                            id="date&time"
+                        />
+                    </p>
+                    <p>
+                        <label for="date">Select Date-time:</label>
+                        <input type="date" name="date" id="date" />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Options</legend>
+                    <p>
+                        <input type="checkbox" name="optins" id="subscribe" value="subscribe-to-updates">
+                        <label for="subscribe">Subscribes to Updates</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="optins" id="option-1" value="option-1">
+                        <label for="option-1">Option 1</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="options" id="option-2" value="option-2">
+                        <label for="option-2">Option 2</label>
+                    </p>
+                    
+                    
+                </fieldset>
+                <br />
+                <button type="submit" id="submit" value="form data">
+                    <strong>Submit</strong>
+                </button>
+                <button type="reset" id="reset" value="form data">
+                    <strong>Reset</strong>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

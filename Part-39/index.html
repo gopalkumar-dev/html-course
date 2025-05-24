@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Our Website</h1>
+
+            <div>
+                <ul>
+                    <li><a href="pages/about-us.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact-us.html">Contact</a></li>
+                    <li><a href="pages/form.html">Form</a></li>
+                </ul>
+                <h2>HTML Learning Path</h2>
+                <p>
+                    This site provides step-by-step tutorials on HTML. Learn to
+                    use
+                    <strong>tags</strong
+                    >,<em>attributes</em>,<strong>formating</strong>, and more.
+                    Key topics include
+                    <span style="background-color: yellow">HTML basics</span>,
+                    <u>styling</u>, and <del>depreeated elements</del>.
+                </p>
+            </div>
+
+            <div>
+                <h3>Responsive Image Example</h3>
+                <picture>
+                    <source
+                        srcset="assets/images/home-page-450.avif 1x"
+                        media="(max-width: 450px)" />
+                    <source
+                        srcset="assets/images/car-image-1280.avif 1.5x"
+                        media="(max-width: 1500px)" />
+                    <source
+                        srcset="assets/images/city-1920.avif 2x"
+                        media="(max-width: 2000px)" />
+                    <source
+                        srcset="assets/images/home-2160.avif 2.5x"
+                        media="(min-width: 2160px)" />
+                    <img
+                        src="assets/images/mahal-1920.avif"
+                        alt="mahal"
+                        width="100%"
+                /></picture>
+            </div>
+            <h3>Home Page Form</h3>
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <p>
+                            <label for="fname">First Name:</label>
+                            <input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                placeholder="Enter your first name"
+                            />
+                        </p>
+                        <p>
+                            <label for="lname">Last Name:</label>
+                            <input
+                                type="text"
+                                name="lname"
+                                id="lname"
+                                placeholder="Enter your last name"
+                            />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" />
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone" />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="color">Favorite Color:</label>
+                            <input type="color" name="color" id="color" />
+                        </p>
+                        <p>
+                            <label for="amount">Amount:</label>
+                            <input
+                                type="number"
+                                name="amount"
+                                id="amount"
+                                min="10"
+                                max="100"
+                                step="5"
+                            />
+                        </p>
+                        <p>
+                            <label for="price-range">Price Range:</label>
+                            <input
+                                type="range"
+                                name="price-range"
+                                id="price-range"
+                                min="1000"
+                                max="10000"
+                                step="1000"
+                            />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Date & Time</legend>
+                        <p>
+                            <label for="date&time">Date & Time: </label>
+                            <input type="datetime-local" name="date&time" id="date&time" >
+                        </p>
+                        <p>
+                            <label for="date">Date:</label>
+                            <input type="date" name="date" id="date" >
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <input type="checkbox" name="option1" id="option1" value="I agreed to the terms & conditions" >
+                            <label for="option1">I agreed to the terms & conditions.</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="option2" id="option2" value="Subscribe to Newsletter" >
+                            <label for="option2">Subscribe to Newsletter.</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="option3" id="option3" value="Do not Subscribe" >
+                            <label for="option3">Do not Subscribe.</label>
+                        </p>
+                        
+                        
+                    </fieldset>
+                    <br />
+                    <button type="submit" name="submit" id="submit">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset" name="reset" id="reset">
+                        <strong>Reset</strong>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

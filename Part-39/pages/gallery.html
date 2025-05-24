@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Gallery Images</h2>
+            <picture>
+                <source
+                    srcset="../assets/images/gallery-450.jpg 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/all-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/city-1920.avif 2x"
+                    media="(max-width: 2000px)"
+                />
+                <source
+                    srcset="../assets/images/landscape1-2160.jpg 2.5x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/house-450.avif"
+                    alt="house"
+                    width="100%"
+                />
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                    srcset="../assets/images/res-gallery-450.avif 1x"
+                    media="(max-width: 500px)"
+                />
+                <source
+                    srcset="../assets/images/car-image-1280.avif 1.5x"
+                    media="(max-width: 1500px)"
+                />
+                <source
+                    srcset="../assets/images/mahal-2160.avif 2x"
+                    media="(min-width: 2160px)"
+                />
+                <img
+                    src="../assets/images/car-image-1920.avif"
+                    alt="car"
+                    width="100%"
+                />
+            </picture>
+            <h3>Gallery Form</h3>
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend>Gallery Feedback</legend>
+                        <p>
+                            <label for="u-name">Username:</label>
+                            <input
+                                type="text"
+                                name="u-name"
+                                id="u-name"
+                                placeholder="Enter your username"
+                            />
+                        </p>
+                        <p>
+                            <label for="e-mail">E-mail:</label>
+                            <input
+                                type="email"
+                                name="e-mail"
+                                id="e-mail"
+                                placeholder="Enter your e-mail"
+                            />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rate Our Gallery</legend>
+                        <p>
+                            <label for="rating">Rating:</label>
+                            <input
+                                type="range"
+                                name="rating"
+                                id="rating"
+                                min="1"
+                                max="10"
+                            />
+                        </p>
+                        <p>
+                            <label for="color">Favorite Color:</label>
+                            <input type="color" name="color" id="color" />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Event Date & Time</legend>
+                        <p>
+                            <label for="date&time">Event Date & Time:</label>
+                            <input
+                                type="datetime-local"
+                                name="date&time"
+                                id="date&time"
+                            />
+                        </p>
+                        <p>
+                            <label for="date">Select Date:</label>
+                            <input type="date" name="date" id="date" />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <input
+                                type="checkbox"
+                                name="main-options"
+                                id="op1"
+                                value="receive-notifications"
+                            />
+                            <label for="op1">Receive Notifications</label>
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                name="other-options"
+                                id="op2"
+                                value="option-a"
+                            />
+                            <label for="op2">Option A</label>
+                        </p>
+                        <p>
+                            <input
+                                type="radio"
+                                name="other-options"
+                                id="op3"
+                                value="option-b"
+                            />
+                            <label for="op3">Option B</label>
+                        </p>
+                    </fieldset>
+                    <br />
+                    <button type="submit" id="submit" value="form data">
+                        <strong>Submit</strong>
+                    </button>
+                    &nbsp;
+                    <button type="reset" id="reset">
+                        <strong>Reset</strong>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
